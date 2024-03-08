@@ -1,10 +1,49 @@
 <!DOCTYPE html>
     <head>
         <title>Calculator BMI</title>
-
+        <meta charset="UTF-8" />
         <link rel="stylesheet" href="css/style.css"/>
-        <body>
 
+        <body>
+            <header>
+                <h1>Calculator BMI - Fajrina</h1>
+            </header>
+
+            <main>
+                <div class="main-container">
+                    <div class="container-item">
+                        <h2>Form BMI</h2>
+                        <p>Berat badan ideal adalah berat badan yang....</p>
+                        <section class="container-form">
+                            <div>
+                                <label>Jenis Kelamin</label><br />
+                                <input type="radio" name="sex" id="sex=man" value="laki-laki">Laki-Laki
+                                <input type="radio" name="sex" id="sex=woman" value="perempuan">Perempuan
+                            </div>
+                            <div>
+                                <label>Berat Badan (kg)</label><br />
+                                <input type="number" class="form-item">
+                            </div>
+                            <div>
+                            <button id="calculator-button" type="button">Hitung BMI</button>
+                            <button  type="button">Reset</button>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="container-item">
+                        <h2>Result</h2>
+                        <section class="container-result">
+                            <h4>Berat Badan Lebih</h4>
+                            <h1>0</h1>
+                            <h4>Anda memiliki berat badan berlebih</h4>
+                            <button type="button">Download Hasil BMI</button>
+                        </section>
+                    </div>
+                </div>
+            </main>
+
+            <footer></footer>
         </body>
 
         <script src="js/script.js"></script>

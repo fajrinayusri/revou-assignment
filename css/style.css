@@ -1,0 +1,54 @@
+header, h1 {
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+}
+
+.container-item {
+    /*background-color: lightpink;*/
+    width: 100%;
+    border: 1px solid black;
+    padding: 24px;
+}
+
+.container-result {
+    text-align: center;
+    background-color: aliceblue;
+    padding-top: 8px;
+    padding-bottom:24px;
+}
+
+.container-form {
+    text-align: left;
+    background-color: aliceblue;
+    padding-top: 8px;
+    padding-bottom:24px;
+}
+
+.container-form, div {
+    padding: 8px;
+}
+
+#calculator-button {
+    background-color: coral;
+    color: white; 
+    border-radius: 8px;
+}
+
+button {
+    border: 0;
+    height: 32px;
+    padding-right: 24px;
+    padding-left: 24px;
+    background-color: lightblue; 
+    border-radius: 8px;
+}
+
+.form-item {
+    height: 24px;
+    border: 0;
+    border-radius: 8px;
+    background-color: rgb(233, 230, 230);
+}
