@@ -6,43 +6,67 @@
 
         <body>
             <header>
-                <h1>Calculator BMI - Fajrina</h1>
+                <h1>Kalkulator BMI - Fajrina Yusri</h1>
             </header>
 
             <main>
                 <div class="main-container">
                     <div class="container-item">
-                        <h2>Form BMI</h2>
-                        <p>Berat badan ideal adalah berat badan yang....</p>
+                        <h2>Kalkulator BMI</h2>
+                        <p style="text-align: justify;">Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.</p>
                         <section class="container-form">
-                            <div>
-                                <label>Jenis Kelamin</label><br />
-                                <input type="radio" name="sex" id="sex=man" value="laki-laki">Laki-Laki
-                                <input type="radio" name="sex" id="sex=woman" value="perempuan">Perempuan
-                            </div>
-                            <div>
-                                <label>Berat Badan (kg)</label><br />
-                                <input type="number" class="form-item">
-                            </div>
-                            <div>
-                            <button id="calculator-button" type="button">Hitung BMI</button>
-                            <button  type="button">Reset</button>
-                            </div>
+                            <form>
+                                <div>
+                                    <label>Jenis Kelamin</label><br />
+                                    <input type="radio" name="gender" id="male" value="laki-laki">Laki-Laki
+                                    <input type="radio" name="gender" id="female" value="perempuan">Perempuan
+                                </div>
+                                <div>
+                                    <label for="weight">Berat Badan (kg)</label><br />
+                                    <input type="number" class="form-item" id="weight" required>
+                                </div>
+                                <div>
+                                    <label for="height">Tinggi Badan (cm)</label><br />
+                                    <input type="number" class="form-item" id="height" required>
+                                </div>
+                                <div>
+                                    <label for="age">Usia (tahun)</label><br />
+                                    <input type="number" class="form-item" id="age" required>
+                                </div>
+            
+                                <div>
+                                    <button class="calculate" id="submit" type="button" onclick="calculate(); textImt();">Hitung BMI</button>
+                                    <button type="reset" value="reset">Reset</button>
+                                </div>
+                            </form>
                         </section>
+                        <h3>Keunggulan fitur</h3>
+                        <ol style="margin-left: -24px; margin-top: -10px;">
+                            <li>Menghitung berat badan</li>
+                            <li>Menentukan kategori berat badan ideal atau tidak</li>
+                            <li>Mempersiapkan program penurunan berat badan</li>
+                        </ol>
                     </div>
-
-                    <div class="container-item">
-                        <h2>Result</h2>
+            
+                    <div class="container-item2">
+                        <h2 style="text-align: left;">Hasil</h2>
                         <section class="container-result">
-                            <h4>Berat Badan Lebih</h4>
-                            <h1>0</h1>
-                            <h4>Anda memiliki berat badan berlebih</h4>
+                            <h4>Hasil BMI kamu adalah</h4>
+                            <div id="result">0</div>
+                            <h4 class="comment"></h4>
+                            <div id="keterangan">
+                                <p class="keterangan"></p>
+                            </div>
                             <button type="button">Download Hasil BMI</button>
                         </section>
+
+                        <h3>Perhatian!</h3>
+                        <p style="text-align: justify;">Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter</p>
                     </div>
                 </div>
             </main>
 
+            
             <footer></footer>
         </body>
 

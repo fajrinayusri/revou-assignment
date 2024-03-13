@@ -1,40 +1,86 @@
+body {
+    /* background: linear-gradient(to bottom right, #9cc1f2, #f1abff); */
+    font-family: candara;
+}
+
 header, h1 {
     text-align: center;
 }
 
 .main-container {
     display: flex;
+    position: relative;
+    margin: 30px 0;
+    
 }
 
 .container-item {
-    /*background-color: lightpink;*/
     width: 100%;
-    border: 1px solid black;
-    padding: 24px;
+    border: 0;
+    /* padding: 24px; */
+    flex-basis: 50%;
+    box-shadow: 2px 9px 49px -17px rgba(156, 39, 148, 0.1);
+    padding: 2em 2em;
+    background: aliceblue;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.container-item2 {
+    width: 100%;
+    border: 0;
+    /* padding: 24px; */
+    flex-basis: 50%;
+    box-shadow: 2px 9px 49px -17px rgba(156, 39, 148, 0.1);
+    padding: 2em 2em;
+    background: rgb(210, 235, 255);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
 }
 
 .container-result {
     text-align: center;
-    background-color: aliceblue;
     padding-top: 8px;
     padding-bottom:24px;
+    background-color: #fff;
+    flex-direction: column;
+}
+
+.container-result2 {
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom:24px;
+    background-color: #fff;
+}
+
+.container-result, div {
+    padding: 8px;
+}
+
+.container-result input {
+    height: 80px;
+    text-align: center;
+    font-size: 40px;
+    border: 0;
 }
 
 .container-form {
     text-align: left;
-    background-color: aliceblue;
     padding-top: 8px;
     padding-bottom:24px;
+    background-color: #fff;
 }
 
 .container-form, div {
     padding: 8px;
 }
 
-#calculator-button {
-    background-color: coral;
+.calculate {
+    background-color: green;
     color: white; 
     border-radius: 8px;
+    margin-right: 5px;
 }
 
 button {
@@ -42,8 +88,16 @@ button {
     height: 32px;
     padding-right: 24px;
     padding-left: 24px;
-    background-color: lightblue; 
+    background-color: lightgreen; 
     border-radius: 8px;
+}
+
+button:hover {
+    scale: 1.05;
+}
+
+button:active {
+    scale: 0.95;
 }
 
 .form-item {
@@ -51,4 +105,16 @@ button {
     border: 0;
     border-radius: 8px;
     background-color: rgb(233, 230, 230);
+}
+
+#result {
+    font-size: 50px;
+    color: green;
+}
+
+.comment {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: green;
 }
